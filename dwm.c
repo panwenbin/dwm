@@ -1954,7 +1954,6 @@ unmanage(Client *c, int destroyed)
 		XSetErrorHandler(xerror);
 		XUngrabServer(dpy);
 	}
-	free(c);
 	focus(NULL);
 	updateclientlist();
 	arrange(m);
@@ -1962,6 +1961,7 @@ unmanage(Client *c, int destroyed)
 		Arg a = { .ui = c->switchtotag };
 		view(&a);
 	}
+	free(c);
 }
 
 void
