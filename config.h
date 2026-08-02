@@ -30,6 +30,8 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     switchtotag    isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            0,             1,           -1 },
 	{ "scrcpy",   NULL,       NULL,       1 << 6,       1,             0,           -1 },
+	{ "mpv",      NULL,       NULL,       0,            0,             1,           -1 },
+	{ "ffplay",   NULL,       NULL,       0,            0,             1,           -1 },
 };
 
 /* layout(s) */
